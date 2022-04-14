@@ -107,12 +107,6 @@ export default {
   },
 
   setup() {
-    // console.log('Setup 111111', this);
-    // onMounted(() => {
-    //   console.log("mounted in the composition api!");
-    //   this.initializeComponent();
-    //   this.$nextTick(this.loadResourcesOnNew);
-    // });
 
   },
 
@@ -187,7 +181,6 @@ export default {
      * Get the query params for getting available resources
      */
     queryParams() {
-      console.log('sdjfkjdsklfj', this.field);
       return {
         params: {
           search: this.search,
@@ -337,7 +330,6 @@ export default {
      * Get the resources that may be related to this resource.
      */
     getAvailableResources(query, use_resource_ids, max) {
-      console.log('getAvailableResources');
       this.searching = true;
       this.availableResources = [];
 
